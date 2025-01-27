@@ -1,3 +1,6 @@
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+  }
 .topnav {
     background-color: #18004b;
     overflow: hidden;
@@ -5,9 +8,9 @@
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
+    float: right;
     color: #ad9fff;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
+    padding: 13px 15px;
+    font-size: 16px;
   }
