@@ -3,7 +3,7 @@ body {
   font-family: "Verdana", "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1;
+  line-height: 1.5;
   background-color: #f5f5f5;
   color: #333;
   display: flex;
@@ -15,17 +15,16 @@ body {
 main {
   flex: 1;
   text-align: center;
-  margin: 20px auto;
-  padding: 20px;
-  min-width: 900px;
-  max-width: 900px;
+  margin: 5vh auto;
+  padding: 5vh 5vw;
+  min-width: 80%;
+  max-width: 90%;
   background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
 }
 
 main h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #18004b;
 }
 
@@ -34,32 +33,35 @@ main h1 {
   background-color: #18004b;
   overflow: hidden;
   display: flex;
-  justify-content: flex-end;
-  padding: 0 10px;
+  justify-content: flex-start;
+  padding: 0 2vw;
 }
 
 .topnav a {
   color: #ad9fff;
   text-decoration: none;
   text-align: center;
-  padding: 15px 20px;
-  font-size: 16px;
+  padding: 2vh 3vw;
+  font-size: 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: auto;
 }
 
 .topnav a:hover {
   background-color: #4a007d;
   color: #ffffff;
-  border-radius: 5px;
 }
-
+logo {
+  border-radius: 8px;
+  vertical-align: left;
+  }
 /* Footer */
 footer {
   background-color: #18004b;
   color: #ad9fff;
   text-align: center;
-  padding: 15px 10px;
-  font-size: 14px;
+  padding: 2vh 2vw;
+  font-size: 0.9rem;
   margin-top: auto;
 }
 
@@ -74,14 +76,37 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .topnav a {
-    font-size: 14px;
-    padding: 12px 10px;
-  }
+/* Style sections */
+section {
+  background-color: #f9f9ff;
+  border: 0.2vh solid #e0e0e0;
+  padding: 4vh 4vw;
+  margin-bottom: 4vh;
+  transition: transform 0.1s ease;
+}
 
-  main h1 {
-    font-size: 1.8rem;
-  }
+/* Hover sections */
+section:hover {
+  transform: scale(1.005);
+}
+
+/* Title sections */
+section h2 {
+  font-size: 1.5rem;
+  color: #18004b;
+  margin-bottom: 2vh;
+  border-bottom: 0.4vh solid #ad9fff;
+  display: inline-block;
+}
+
+/* Lists */
+section ul {
+  margin-top: 2vh;
+  display: inline-block;
+  text-align: left;
+  padding-left: 4vw;
+}
+
+section ul li {
+  margin-bottom: 1.5vh;
 }
