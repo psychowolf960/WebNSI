@@ -107,6 +107,11 @@ section ul {
   padding-left: 4vw;
 }
 
+img { /* svg on an img tag */
+  -webkit-filter: invert(.75); /* safari 6.0 - 9.0 */
+          filter: invert(.75);
+}
+
 section ul li {
   margin-bottom: 1.5vh;
 }
